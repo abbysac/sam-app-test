@@ -68,7 +68,7 @@ build: compile
 
 package: compile
 	pipenv run sam package --template-file $(SAM_DIR)/build/template.yaml --s3-bucket $(PACKAGE_BUCKET) --output-template-file $(SAM_DIR)/packaged-app.yml
-#	pipenv run aws s3api put-object --bucket $(INTEG_TEST_BUCKET) --key template.yml --body $(SAM_DIR)/packaged-app.yml
+	pipenv run aws s3api put-object --bucket $(INTEG_TEST_BUCKET) --key template.yml --body $(SAM_DIR)/packaged-app.yml
 
 publish: package
 	pipenv run sam publish --template $(SAM_DIR)/packaged-app.yml

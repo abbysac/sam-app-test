@@ -9,9 +9,9 @@ Metadata:
       a Lambda function that a user could then use as an Invoke action target in their CodePipeline.
     Author: AWS Serverless Application Repository
     Labels: [serverless, codepipeline, serverlessrepo]
-    HomePageUrl: https://github.com/abbysac/sam-pipeline-project.git
+    HomePageUrl: https://github.com/abbysac/sam-app-test.git
     SemanticVersion: 1.0.1
-    SourceCodeUrl: https://github.com/abbysac/sam-pipeline-project.git/tree/1.0.1
+    SourceCodeUrl: https://github.com/abbysac/sam-app-test.git/tree/1.0.1
 
 Parameters:
   Description:

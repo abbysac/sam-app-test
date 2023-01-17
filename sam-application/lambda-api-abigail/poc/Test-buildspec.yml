@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+    - yum install which -y
+    - make init
+  build:
+    commands:
+    - echo "export SAM_CLI_TELEMETRY=0" >>~/.profile
+    - source ~/.profile
+    - ls -al . 
+    - make
+    - make init compile

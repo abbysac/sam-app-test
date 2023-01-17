@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+aws-xray-sdk = "*"
+serverlessrepo = "*"
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+pydocstyle = "*"
+cfn-lint = "*"
+aws-sam-cli = "*"
+awscli = "==1.18.76"
+pytest = "*"
+pytest-mock = "*"
+pytest-cov = "*"
+mock = "*"
+
+[requires]
+python_version = "3.7"

@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+    - yum install which -y
+    - make init
+  build:
+    commands:
+    - echo "export SAM_CLI_TELEMETRY=0" >>~/.profile
+    - source ~/.profile
+    - make
+    - make init deploy
+artifacts:
+  files:
+    - .aws-sam/packaged-app.yml
+  discard-paths: yes

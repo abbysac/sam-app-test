@@ -48,7 +48,7 @@ Resources:
       VersionDescription: !Ref Description
       CodeUri: ../../lambda-api-test/
       Handler: handler.publish
-      Runtime: python3.7
+      Runtime: python3.8
       Tracing: Active
       MemorySize: 256
       Timeout: 900

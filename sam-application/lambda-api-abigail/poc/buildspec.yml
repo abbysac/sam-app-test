@@ -12,5 +12,5 @@ phases:
     - make init deploy
 artifacts:
   files:
-    - poc/.aws-sam/packaged-app.yml
+    - sam-application/lambda-api-abigail/poc/.aws-sam/packaged-app.yml
   discard-paths: yes

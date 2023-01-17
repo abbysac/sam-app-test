@@ -3,7 +3,7 @@ phases:
   install:
     commands:
     - yum install which -y
-    - cd poc
+    - cd sam-application/lambda-api-abigail/poc
     - make init
   build:
     commands:
@@ -13,5 +13,5 @@ phases:
     - make init package
 artifacts:
   files:
-    - poc/.aws-sam/packaged-app.yml
+    - sam-application/lambda-api-abigail/poc/.aws-sam/packaged-app.yml
   discard-paths: yes
